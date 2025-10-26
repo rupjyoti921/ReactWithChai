@@ -1,2 +1,2 @@
 # ReactWithChai
-This whole repo will carry my learning on react.
+This whole repo will carry my learnings on react.
