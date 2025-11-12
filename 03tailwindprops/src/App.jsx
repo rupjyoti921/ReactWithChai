@@ -3,22 +3,18 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import rupImage from './assets/rup.jpeg'
 import './App.css'
+import Card from './components/card.jsx'
 
 function App() {
+  const nameList=["Rohan","Sohan","Mohan"];
   return (
   <>
-    <div className="flex flex-col gap-2 p-8 sm:flex-row sm:items-center sm:gap-6 sm:py-4 ...">
-    <img className="mx-auto block h-24 rounded-full sm:mx-0 sm:shrink-0" src={rupImage} alt="" />
-    <div className="space-y-2 text-center sm:text-left">
-    <div className="space-y-0.5">
-      <p className="text-lg font-semibold text-black">Erin Lindford</p>
-      <p className="font-medium text-gray-500">Product Engineer</p>
-    </div>
-    <button className="border-purple-200 text-purple-600 hover:border-transparent hover:bg-purple-600 hover:text-white active:bg-purple-700 ...">
-      Message
-    </button>
-  </div>
-</div>
+    <h1 className="text-3xl font-bold mb-4 bg-yellow-300 p-4 rounded-lg">
+    Hello world!
+    </h1>
+    {nameList.map((name)=>(
+      <Card userName={name} btnText={"Read me"} />
+    ))}
   </>
   )
 }
