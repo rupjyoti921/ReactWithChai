@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+@theme {
+  --color-*: initial;
+  --color-primary: oklch(0.7 0.2 210);
+}
+
+@utility dark {
+  color-scheme: dark;
+}
