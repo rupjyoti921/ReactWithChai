@@ -2,3 +2,5 @@
 2. Map (for loop)
 3. Fetch for API Call
 4. React Router
+5. what is state management
+6. Context API
